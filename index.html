@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joshua Zhu's Journal Pages</title>
+        <link rel="icon" href="Icon.png">
+    </head>
+    <body>
+        <header>
+            <h1>Joshua Zhu's Journal from April 5 to April 7.</h1>
+            <p>This journal covers, for each day, what was needed to do, what was done, and work to do.</p>
+            <img
+                src="calendar screenshot.png"
+                alt="calendar"
+                width="1000"
+            \>
+            <hr \>
+            <div>Each date:</div>
+            <nav>
+                <ul>
+                    <li><a href="#Monday">Monday, April 5</a></li>
+                    <li><a href="#Tuesday">Tuesday, April 6</a></li>
+                    <li><a href="#Wednesday">Wednesday, April 7</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <hr \>
+            <section>
+                <h2 id="Monday">Monday, April 5</h2>
+                <h3>First day of week 2!</h3>
+                <span>Classes for today:</span>
+                <ul>
+                    <li>CSE130 Lecture at 1PM</li>
+                    <li>CSE110 Discussion at 4PM</li>
+                </ul>
+                <span>Work done:</span>
+                <ol>
+                    <li>Rewatch CSE101 lectures</li>
+                    <li>Finish CSE101 hw0</li>
+                    <li>Helped Dad with the backyard garden/sprinklers</li>
+                </ol>
+                <span>Work to still do:</span>
+                <ol>
+                    <li><strong>Finish</strong> CSE 101 hw0</li>
+                </ol>
+                <span>Closing thoughts:</span>
+                <div>Beginning of the week. Keep it strong!</div>
+                <br \>
+                <span>Fun stuff: Here's a song of the day - "<i>Professor Layton and the Curious Village Soundtrack - Layton's Theme (Live Version)"</i></span>
+                <br \>
+                <audio
+                    controls
+                    src="Professor Layton & The Curious Village Soundtrack - Layton's Theme (Live Version).mp3">
+                </audio>
+            </section>
+            <hr \>
+            <section>
+                <h2 id="Tuesday">Tuesday, April 6</h2>
+                <h3>Day two of week 2.</h3>
+                <span>Classes for today:</span>
+                <ul>
+                    <li>CSE101 Lecture at 11AM - 12:20PM</li>
+                    <li>VIS3 Discussion 1:30PM - 3:20PM</li>
+                    <li>CSE110 Lecture at 4PM - 5PM</li>
+                </ul>
+                <span>Work done:</span>
+                <ol>
+                    <li>Watched VIS3 Lecture</li>
+                    <li>Finished CSE101 hw0</li>
+                </ol>
+                <span>Work to still do:</span>
+                <ol>
+                    <li>Final check CSE101 hw0</li>
+                    <li>Do reading for VIS3 for Thursday's discussion</li>
+                    <li>Rewatch CSE130 lectures to understand material better</li>
+                </ol>
+                <h3>Closing thoughts:</h3>
+                <div>Kinda slacked today - <b>bring the energy and productivity up!</b></div>
+                <br \>
+                <details>
+                    <summary>Fun stuff: Open for a suprise:</summary>
+                    <span>My dog, Kelly!</span>
+                    <br \>
+                <img
+                    src="Doggo.JPG"
+                    alt="My dog, Kelly"
+                    width=300
+                    >
+                </details>
+
+            </section>
+            <hr \>
+            <section>
+                <h1>Wednesday, April 7</h1>
+                <h2 id="Wednesday">Day three...</h2>
+                <span>Classes for today:</span>
+                <ul>
+                    <li>CSE130 Lecture at 1PM</li>
+                    <li>CSE110 Lab</li>
+                </ul>
+                <span>Work done:</span>
+                <ol>
+                    <li>Finished Part 1 of 110 Lab</li>
+                    <li>Finished readings for VIS3 discussion</li>
+                    <li>Finished preparation for VIS3 project due next Tuesday</li>
+                    <li>Started meeting planning for 110 project</li>
+                </ol>
+                <span>Work to still do:</span>
+                <ol>
+                    <li>Coordinate with Nora for project meetings</li>
+                    <li>Begin planning out timetable for project meetings</li>
+                </ol>
+                <h3>Closing thoughts:</h3>
+                <div>Stay on top of the project for 110. A <em>lot</em> rides on getting meetings coordinated to get assignments done.</div>
+                <br \>
+                <span>Fun stuff: Here's a video of the Christmas lights at Brea.</span>
+                <br \>
+                <video controls width="250">
+                    <source src="Christmas Lights.MOV">
+                </video>
+           </section>
+            <hr \>
+        </main>
+        <footer>
+            <h3>Enter a new Journal Entry: </h3>
+            <form>
+                <fieldset>
+                    <legend>Add a new Journal Entry:</legend>
+                    <div>
+                        <label for="Date">Enter the date: </label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div>
+                        <label for="Day">Enter the day: </label>
+                        <select id="days-of-week">
+                            <option value="Sunday">Sunday</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="classes">Select what classes: </label>
+                        <input list="classes-list" id="classes" name="classes" \>
+                        <br \>
+                        <datalist id="classes-list">
+                            <option value="CSE110">
+                            <option value="CSE130">
+                            <option value="CSE101">
+                            <option value="VIS3">
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="day-description">Enter what you did today: </label>
+                        <br \>
+                        <textarea id="day-description" name="day-description" rows="10" cols="50">
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="todo">Enter what still needs to be done: </label>
+                        <input type="text" id="todo" name="todo" size="100">
+                    </div>
+                    <div>
+                        <label for="fun-thing">Fun thing: </label>
+                        <input type="radio" name="fun-thing" id="fun-thing" value="image">
+                        <label for="image">Image</label>
+                        <input type="radio" name="fun-thing" id="fun-thing" value="video">
+                        <label for="image">Video</label>
+                        <input type="radio" name="fun-thing" id="fun-thing" value="audio">
+                        <label for="image">Audio</label>                       
+                    </div>
+                    <div>
+                        <label for="final-check">Before you submit: </label>
+                        <br \>
+                        <input type="checkbox" id="final-check1" name="final-check1">
+                        <label for="final-check1">Everything that you did today - accurate?</label>
+                        <br \>
+                        <input type="checkbox" id="final-check2" name="final-check2">
+                        <label for="final-check2">Everything that still needs to be done - fully filled out?</label>
+                    </div>
+                    <div>
+                        <button class="submit" type="button">
+                            Submit!
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </footer>
+    </body>
+</html>
