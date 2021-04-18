@@ -1,0 +1,132 @@
+@media only screen and (min-width:900px){ /* Media Query - if device's minimum width is 900px, make bg-color lightsteelblue */
+    header{
+        background:lightsteelblue;
+    }
+}
+
+h1{
+    text-align: center;                 /* Set up basic formatting for h1 - main header */
+    color:indigo;
+    display:block;
+    margin: auto;
+
+    padding-top: 0em;                   /* Set up padding on h1 */
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 2em;
+    
+    width: 480px;                       /* Limit width to word wrap */
+
+    position: relative;                 /* fix position relative */
+    top: 10px; left: auto;
+}
+
+img, video{
+    display: block;                     /* Help make img and video centered */
+
+    border-style: dashed;               /* Set border properties */
+    border-color:#808080;             /* Set hex color */
+    border-width: 1px;
+    border-radius: 10px;
+
+    margin-top: 5px;                    /* Set detailed margins */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+
+    max-width: 1000px;                  /* Set max size */
+    max-height: 2000px;
+}
+
+audio{
+    border-style: ridge;                /* Set border properties */
+    border-color: rgb(50, 125, 200);  /* Set rgb color */
+    border-width: 5px;
+    border-radius: 30px;
+
+    padding: 2px 2px 2px 2px;           /* Set shorthand padding */
+
+    height: 20px;                       /* Set height */
+}
+
+ul, ol{
+    margin: 10px 3px 10px 3px;          /* Set shorthand margins */
+    color: hsl(271, 65%, 40%)         /* Set hsl color */
+}
+
+button{
+    background-color: skyblue;        /* Set named color */
+}
+
+button:hover{
+    background-color: greenyellow;    /* Hover pseudoclass to change to greenyellow */
+}
+
+form:active{
+    background: khaki;                /* active pseudoclass to change background color to khaki */
+    transition: background .5s;
+}
+
+.flex-container{                        /* set flex-container properties */
+    display: flex;
+    background-color:lavender;
+
+    flex-direction: row;                /* 3 flexbox related attributes */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-item-headers{                     /* flexbox children */
+    order: 1;
+}
+
+.flex-item-classes{
+    order: 2;
+}
+
+.flex-item-done{
+    order: 3;
+}
+
+.flex-item-todo{
+    order: 4;
+}
+
+.flex-item-closing{
+    order: 5;
+}
+
+.grid-container{                                /* set grid-container properties */
+    display: grid;
+    background-color:darkgrey;
+
+    grid-template-columns: 400px auto 400px;    /* 4 grid related attributes */
+    grid-template-rows: auto auto;
+    column-gap: 50px;
+    justify-content: start;
+}
+
+.grid-item-headers{                             /* grid children */
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid-item-classes{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.grid-item-done{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.grid-item-todo{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grid-item-closing{
+    grid-column: 3;
+    grid-row: 2;
+}
