@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="">
     <head>
+        <style>
+            body{
+                background-color: seashell;
+                font-family: 'Quicksand', sans-serif;
+            }
+        </style>
+        <link rel="stylesheet" href="journalstyle.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Joshua Zhu's Journal Pages</title>
@@ -9,7 +16,11 @@
     <body>
         <header>
             <h1>Joshua Zhu's Journal from April 5 to April 7.</h1>
-            <p>This journal covers, for each day, what was needed to do, what was done, and work to do.</p>
+            <p style="
+    background-color: salmon;
+    position: -webkit-sticky;
+    position:sticky;
+    top: 20px;">This journal covers, for each day, what was needed to do, what was done, and work to do.</p>
             <img
                 src="calendar_screenshot.png"
                 alt="calendar"
@@ -27,69 +38,88 @@
         </header>
         <main>
             <hr>
-            <section>
-                <h2 id="Monday">Monday, April 5</h2>
-                <h3>First day of week 2!</h3>
-                <span>Classes for today:</span>
-                <ul>
-                    <li>CSE130 Lecture at 1PM</li>
-                    <li>CSE110 Discussion at 4PM</li>
-                </ul>
-                <span>Work done:</span>
-                <ol>
-                    <li>Rewatch CSE101 lectures</li>
-                    <li>Finish CSE101 hw0</li>
-                    <li>Helped Dad with the backyard garden/sprinklers</li>
-                </ol>
-                <span>Work to still do:</span>
-                <ol>
-                    <li><strong>Finish</strong> CSE 101 hw0</li>
-                </ol>
-                <span>Closing thoughts:</span>
-                <div>Beginning of the week. Keep it strong!</div>
-                <br>
-                <span>Fun stuff: Here's a song of the day - "<i>Professor Layton and the Curious Village Soundtrack - Layton's Theme (Live Version)"</i></span>
-                <br>
-                <audio
-                    controls
-                    src="Layton_theme_live.mp3">
-                </audio>
+            <section class="grid-container">
+                <section class="grid-item-headers">
+                    <h2 id="Monday">Monday, April 5</h2>
+                    <h3>First day of week 2!</h3>
+                </section>
+                <section class="grid-item-classes">
+                    <span>Classes for today:</span>
+                    <ul>
+                        <li>CSE130 Lecture at 1PM</li>
+                        <li>CSE110 Discussion at 4PM</li>
+                    </ul>
+                </section>
+                <section class="grid-item-done">
+                    <span>Work done:</span>
+                    <ol>
+                        <li>Rewatch CSE101 lectures</li>
+                        <li>Finish CSE101 hw0</li>
+                        <li>Helped Dad with the backyard garden/sprinklers</li>
+                    </ol>
+                </section>
+                <section class="grid-item-todo">
+                    <span>Work to still do:</span>
+                    <ol>
+                        <li><strong>Finish</strong> CSE 101 hw0</li>
+                    </ol>
+                </section>
+                <section class="grid-item-closing">
+                    <span>Closing thoughts:</span>
+                    <div>Beginning of the week. Keep it strong!</div>
+                    <br>
+                    <span>Fun stuff: Here's a song of the day - "<i>Professor Layton and the Curious Village Soundtrack - Layton's Theme (Live Version)"</i></span>
+                    <br>
+                    <audio
+                        controls
+                        src="Layton_theme_live.mp3">
+                    </audio>
+                </section>
             </section>
             <hr>
-            <section>
-                <h2 id="Tuesday">Tuesday, April 6</h2>
-                <h3>Day two of week 2.</h3>
-                <span>Classes for today:</span>
-                <ul>
-                    <li>CSE101 Lecture at 11AM - 12:20PM</li>
-                    <li>VIS3 Discussion 1:30PM - 3:20PM</li>
-                    <li>CSE110 Lecture at 4PM - 5PM</li>
-                </ul>
-                <span>Work done:</span>
-                <ol>
-                    <li>Watched VIS3 Lecture</li>
-                    <li>Finished CSE101 hw0</li>
-                </ol>
-                <span>Work to still do:</span>
-                <ol>
-                    <li>Final check CSE101 hw0</li>
-                    <li>Do reading for VIS3 for Thursday's discussion</li>
-                    <li>Rewatch CSE130 lectures to understand material better</li>
-                </ol>
-                <h3>Closing thoughts:</h3>
-                <div>Kinda slacked today - <b>bring the energy and productivity up!</b></div>
-                <br>
-                <details>
-                    <summary>Fun stuff: Open for a suprise:</summary>
-                    <span>My dog, Kelly!</span>
+            <section class="flex-container">
+                <section class="flex-item-headers">
+                    <h2 id="Tuesday">Tuesday, April 6</h2>
+                    <h3>Day two of week 2.</h3>
+                </section>
+                <section class="flex-item-classes">
+                    <span>Classes for today:</span>
+                    <ul>
+                        <li>CSE101 Lecture at 11AM - 12:20PM</li>
+                        <li>VIS3 Discussion 1:30PM - 3:20PM</li>
+                        <li>CSE110 Lecture at 4PM - 5PM</li>
+                    </ul>
+                </section>
+                <section class="flex-item-done">
+                    <span>Work done:</span>
+                    <ol>
+                        <li>Watched VIS3 Lecture</li>
+                        <li>Finished CSE101 hw0</li>
+                    </ol>
+                </section>
+                <section class="flex-item-todo">
+                    <span>Work to still do:</span>
+                    <ol>
+                        <li>Final check CSE101 hw0</li>
+                        <li>Do reading for VIS3 for Thursday's discussion</li>
+                        <li>Rewatch CSE130 lectures to understand material better</li>
+                    </ol>
+                </section>
+                <section class="flex-item-closing">
+                    <h3>Closing thoughts:</h3>
+                    <div>Kinda slacked today - <b>bring the energy and productivity up!</b></div>
                     <br>
-                <img
-                    src="Doggo.JPG"
-                    alt="My dog, Kelly"
-                    width=300
-                    >
-                </details>
-
+                    <details>
+                        <summary>Fun stuff: Open for a suprise:</summary>
+                        <span>My dog, Kelly!</span>
+                        <br>
+                    <img
+                        src="Doggo.JPG"
+                        alt="My dog, Kelly"
+                        width=300
+                        >
+                    </details>
+                </section>
             </section>
             <hr>
             <section>
