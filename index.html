@@ -2,9 +2,11 @@
 <html lang="">
     <head>
         <style>
+            *{      /* Universal Selector */
+                font-family: 'Quicksand', sans-serif;
+            }
             body{
                 background-color: seashell;
-                font-family: 'Quicksand', sans-serif;
             }
         </style>
         <link rel="stylesheet" href="journalstyle.css">
@@ -27,8 +29,8 @@
                 width="1000"
             >
             <hr>
-            <div>Each date:</div>
             <nav>
+            <div>Each date:</div>
                 <ul>
                     <li><a href="#Monday">Monday, April 5</a></li>
                     <li><a href="#Tuesday">Tuesday, April 6</a></li>
@@ -85,7 +87,11 @@
                 <section class="flex-item-classes">
                     <span>Classes for today:</span>
                     <ul>
-                        <li>CSE101 Lecture at 11AM - 12:20PM</li>
+                        <li>CSE101 Lecture at 11AM - 12:20PM
+                            <ul>
+                                <li><i>skipped for today oops</i></li>
+                            </ul>
+                        </li>
                         <li>VIS3 Discussion 1:30PM - 3:20PM</li>
                         <li>CSE110 Lecture at 4PM - 5PM</li>
                     </ul>
@@ -124,7 +130,7 @@
             <hr>
             <section>
                 <h2 id="Wednesday">Wednesday, April 7</h2>
-                <h3>Day three...</h3>
+                <h3 class="red">Day three...</h3>
                 <span>Classes for today:</span>
                 <ul>
                     <li>CSE130 Lecture at 1PM</li>

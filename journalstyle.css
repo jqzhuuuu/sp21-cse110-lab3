@@ -4,7 +4,7 @@
     }
 }
 
-h1{
+h1{                                     /* Element Selector */
     text-align: center;                 /* Set up basic formatting for h1 - main header */
     color:indigo;
     display:block;
@@ -21,7 +21,7 @@ h1{
     top: 10px; left: auto;
 }
 
-img, video{
+img, video{                             /* Selector List */
     display: block;                     /* Help make img and video centered */
 
     border-style: dashed;               /* Set border properties */
@@ -129,4 +129,32 @@ form:active{
 .grid-item-closing{
     grid-column: 3;
     grid-row: 2;
+}
+
+#Monday{                                    /* ID Selector */
+    color:darkorchid;
+}
+
+a[href^="#"]{                               /* Attribute Selector */
+    background-color: darkturquoise;
+}
+
+nav > div{                                  /* Child Combinator */
+    background-color: white;
+}
+
+li li{                                      /* Descendent Combinator */
+    background-color: white;
+}
+
+summary + span{                             /* Adjacent Sibling Comsbinator */
+    background-color: peachpuff;
+}
+
+h3 ~ details{                               /* General Sibling Combinator */
+    background-color: white;
+}
+
+h3.red{                           /* Combining element.class selector */
+    background-color: pink;
 }
